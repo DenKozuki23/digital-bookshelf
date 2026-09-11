@@ -74,6 +74,13 @@
         author: "Donella Meadows"
     }
 ];
+            const bookshelf = document.getElementById("bookshelf");
+
+books.forEach(function(book) {
+    const item = document.createElement("p");
+    item.textContent = book.title + " — " + book.author;
+    bookshelf.appendChild(item);
+});
         </script>
         
 </body>
