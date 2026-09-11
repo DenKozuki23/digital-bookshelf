@@ -88,7 +88,7 @@
 
 books.forEach(function(book) {
     const item = document.createElement("p");
-   item.textContent = book.title + " — " + book.author + " [" + book.category + "]";
+   item.textContent = book.title + " — " + book.author + " [" + book.category + "] — " + book.status;
     bookshelf.appendChild(item);
 });
         </script>
