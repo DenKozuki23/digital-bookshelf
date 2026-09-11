@@ -26,6 +26,9 @@
 <body>
 
     <h1>Den's Digital Bookshelf</h1>
+    <button onclick="showMessage()">Tampilkan koleksi</button>
+
+<p id="message"></p>
 
     <p>My personal collection of books, ideas, and frameworks.</p>
 
@@ -57,7 +60,9 @@
     <li>Sullam Munawraq</li>
 </ul>
         <script>
-    alert("Hello from my bookshelf!");
+    function showMessage() {
+        document.getElementById("message").textContent = "Selamat datang di bookshelf gue!";
+    }
         </script>
         
 </body>
